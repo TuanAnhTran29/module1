@@ -1,0 +1,59 @@
+.table1{
+
+    text-align: center;
+    width: 500px;
+
+}
+
+.table2{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 500px;
+    height: 100px;
+}
+.table2 td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+.table2 th{
+    background-color: yellow;
+}
+.table2 h2{
+    text-align: center;
+}
+
+
+
+
+.table3{
+    text-align: center;
+    width: 1000px;
+    border-color: white;
+
+}
+.table4{
+    width: 1000px;
+    border-collapse: collapse;
+    border: white;
+}
+.table5{
+    width: 1000px;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+
+.table5 td{
+    border-collapse: collapse;
+    border: 1px solid black ;
+    height: 30px;
+}
+
+.table5 th{
+    border-collapse: collapse;
+    border: 1px solid black ;
+    height: 30px;
+    background-color: yellow;
+}
+
+
