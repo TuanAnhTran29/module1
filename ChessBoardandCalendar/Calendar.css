@@ -1,0 +1,44 @@
+.thang10{
+    width: 500px;
+    font-size: 25px;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.SUN red{
+
+}
+.thu{
+    border-collapse: separate;
+    width: 500px;
+}
+.tata{
+    width: 490px;
+    text-align: center;
+    font-size: 15px;
+}
+.tatata{
+    width: 510px;
+    border: 1px solid;
+    text-align: center;
+    padding: 1px;
+
+}
+.tatata td{
+    padding: 15px;
+    border: 0.5px solid rgb(148,148,148);
+
+}
+.chudo{
+    color: red;
+}
+.chuxanh{
+    color: blue;
+}
+
