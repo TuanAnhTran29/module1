@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToanChuyenDoiTienTe</title>
+    <style>
+        .table1 th{
+           width: 300px;
+            font-size: 20px;
+            text-align: center ;
+        }
+        .table1 td{
+            text-align: center;
+        }
+        #convertBtn{
+            background-color: blue;
+            color: white;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <tr>
+            <th><b>Amount</b></th>
+            <th><b>From Currency</b></th>
+            <th><b>To Currency</b></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"></td>
+            <td><select id="from">
+                    <option value="vnd">VietNam</option>
+                    <option value="usd">USD</option>
+            </select></td>
+            <td><select id="to">
+                    <option value="usd">USD</option>
+                    <option value="vnd">VietNam</option>
+
+            </select></td>
+            <td><button type="button" value="Convert" onclick="convertCurrency()" id="convertBtn">Convert</button></td>
+        </tr>
+    </table>
+    <p id="result" style="color: blue; font-weight: bold"></p>
+
+
+</body>
+<script>
+    function convertCurrency(){
+        let amount= document.getElementById("amount").value;
+        let from= document.getElementById("from").value;
+        let to= document.getElementById("to").value;
+
+        if (from == "vnd" && to== "usd"){
+            let output= amount/23000
+            document.getElementById("result").innerHTML="Result: " + output + " " + to
+
+        } else if (from == "usd" && to== "vnd"){
+            let output= amount * 23000
+            document.getElementById("result").innerHTML="Result: " + output + " " + to
+        } else {
+            document.getElementById("result").innerHTML="Result: " + amount + " " + to
+        }
+    }
+
+</script>
+</html>
