@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+  <table>
+      <tr>
+          <td><b>Calculator</b></td>
+      </tr>
+      <tr>
+          <td colspan="2"><input type="text" id="firstNum"></td>
+          <td colspan="2"><input type="text" id="secondNum"></td>
+      </tr>
+      <tr>
+          <td><input id="plus" type="button" value="Addition(+)" onclick="add()"></td>
+          <td><input id="minus" type="button" value="Subtraction(-)" onclick="subtract()"></td>
+          <td><input  id="time" type="button" value="Multiplication(X)" onclick="multiply()"></td>
+          <td><input  id="split" type="button" value="Division(/)" onclick="div()"></td>
+      </tr>
+  </table>
+    <p id="result"></p>
+</body>
+<script>
+
+
+
+    function add(){
+        let a= parseInt( document.getElementById("firstNum").value);
+        let b= parseInt( document.getElementById("secondNum").value);
+        let output= a + b;
+        document.getElementById("result").innerHTML="Result: " + output;
+
+    }
+    function subtract(){
+        let a= parseInt( document.getElementById("firstNum").value);
+        let b= parseInt( document.getElementById("secondNum").value);
+        let output= a - b
+        document.getElementById("result").innerHTML="Result: " + output
+    }
+    function multiply(){
+        let a= parseInt( document.getElementById("firstNum").value);
+        let b= parseInt( document.getElementById("secondNum").value);
+        let output= a * b;
+        document.getElementById("result").innerHTML="Result: " +output;
+    }
+    function div(){
+        let a= parseInt( document.getElementById("firstNum").value);
+        let b= parseInt( document.getElementById("secondNum").value);
+        let output= a / b;
+        document.getElementById("result").innerHTML="Result: " +output;
+    }
+
+
+</script>
+
+</html>
