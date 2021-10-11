@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <link rel="stylesheet" type="text/css" href="MayTinhDonGian.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4"><input type="text" id="result"></th>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="btn('1')"></td>
+            <td><input type="button" value="2" onclick="btn('2')"></td>
+            <td><input type="button" value="3" onclick="btn('3')"></td>
+            <td><input type="button" value="+" onclick="cal('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="btn('4')"></td>
+            <td><input type="button" value="5" onclick="btn('5')"></td>
+            <td><input type="button" value="6" onclick="btn('6')"></td>
+            <td><input type="button" value="-" onclick="cal('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="btn('7')"></td>
+            <td><input type="button" value="8" onclick="btn('8')"></td>
+            <td><input type="button" value="9" onclick="btn('9')"></td>
+            <td><input type="button" value="*" onclick="cal('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" onclick="clr('C')"></td>
+            <td><input type="button" value="0" onclick="btn('0')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+            <td><input type="button" value="/" onclick="cal('/')"></td>
+        </tr>
+    </table>
+<script src="MayTinhDonGian.js"></script>
+</body>
+</html>
