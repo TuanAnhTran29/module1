@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng good fast cheap</title>
+</head>
+<body>
+    <table>
+      <tr>
+        <td ><label>
+          <input id="good" type="checkbox" onclick="check('good')" >
+        </label></td>
+        <td><h2>GOOD</h2></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input id="cheap" type="checkbox" onclick="check('cheap')" >
+        </label></td>
+        <td><h2>CHEAP</h2></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input id="fast" type="checkbox" onclick="check('fast')">
+        </label></td>
+        <td><h2>FAST</h2></td>
+      </tr>
+    </table>
+<script>
+  let good= document.getElementById("good")
+  let cheap= document.getElementById("cheap")
+  let fast= document.getElementById("fast")
+
+  function check(att) {
+    switch (att){
+    case ("good"):
+      if (cheap.checked === true && fast.checked === true){
+        cheap.checked = false
+
+      }
+      break;
+    case ("cheap"):
+      if (good.checked === true && fast.checked === true){
+        fast.checked = false
+      }
+      break;
+    case ("fast"):
+      if (good.checked === true && cheap.checked === true){
+        good.checked = false
+  }
+      break;
+  }}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
