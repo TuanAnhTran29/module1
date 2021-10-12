@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+    <script>
+        let a= parseInt(prompt("Số phút gọi (phút):  "))
+        let bill= 0
+        let fixedFee= 25000
+
+      if (a> 200){
+          bill= (a - 200) * 200 + 150 * 400 + 50 * 600
+      }else if (a>50){
+          bill= (a-50)* 400+ 50* 600
+      }else {
+          bill= a* 600
+      }
+      let sumBill= fixedFee + bill* 0.01
+      alert("Số phút bạn đã gọi: " + a +  " phút")
+      alert("Cước điện thoại của bạn: " + sumBill + " VND")
+
+
+
+
+    </script>
+</body>
+</html>

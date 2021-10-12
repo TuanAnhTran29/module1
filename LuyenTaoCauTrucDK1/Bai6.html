@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+    <script>
+        let income= parseInt(prompt("Nhập doanh số bán hàng (VND):  "))
+        let commission= 0
+
+
+
+        if (income< 200000) {
+            commission = income * 0.03
+        } else if (income>=200000 && income< 500000){
+            commission= income * 0.05
+        }else {
+            commission= income * 0.1
+        }
+
+        alert("Tiền hoa hồng: " + commission + "VND")
+    </script>
+</body>
+</html>

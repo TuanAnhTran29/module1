@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+  <script>
+      let testScore= parseInt(prompt("Nhập điểm bài kiểm tra: "))
+      let midSemesterScore= parseInt(prompt("Nhập điểm thi giữa kỳ: "))
+      let semesterScore= parseInt(prompt("Nhập điểm thi cuối kỳ:  "))
+
+      let averageScore= (testScore + midSemesterScore*2 + semesterScore*3)/6
+
+      if (averageScore< 5){
+          alert("Học sinh Yếu")
+      }else if (averageScore<= 6 ){
+          alert("Học sinh Trung Bình")
+      }else if (averageScore<= 8){
+          alert("Học sinh Khá")
+      }else {
+          alert("Học sinh giỏi")
+      }
+
+
+  </script>
+</body>
+</html>
