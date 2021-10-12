@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai9</title>
 </head>
 <body>
-$END$
+    <script>
+        let a= parseInt(prompt("Enter number a: "))
+        let b= parseInt(prompt("Enter number b: "))
+        let c= parseInt(prompt("Enter number c: "))
+
+        if (a > 0 &&  b>0 && c>0 && a+b>c && b+c>a && c+a>b){
+            alert("a,b,c là ba cạnh của một tam giác")
+        }else {
+            alert("a,b,c không phải là ba cạnh của một tam giác")
+        }
+    </script>
 </body>
 </html>

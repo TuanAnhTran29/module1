@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai10</title>
 </head>
 <body>
-$END$
+  <script>
+      let conSummed= parseInt(prompt("Chỉ số điện tiêu thụ tháng này (kWh):"))
+      let level_1= 1.678
+      let level_2= 1.734
+      let level_3= 2.014
+      let level_4= 2.536
+      let level_5= 2.834
+      let level_6= 2.927
+      let bill= 0
+
+      if (conSummed< 51){
+            bill= conSummed* level_1
+      }else if (conSummed< 101){
+          bill= (50* level_1) + ((conSummed-50)* level_2)
+      }else if (conSummed< 210){
+          bill= (50* level_1) + (50 * level_2) + ((conSummed-100)* level_3)
+      }else if (conSummed< 301){
+          bill= (50* level_1) + (50 * level_2) + (100* level_3) + ((conSummed-200)* level_4)
+      }else if (conSummed<401) {
+          bill= (50*level_1) + (50*level_2) + (100*level_3) + (100*level_4) + ((conSummed-300) *level_5)
+      } else {
+          bill= (50*level_1) + (50*level_2) + (100*level_3) + (100*level_4) + (100 *level_5) + ((conSummed-400)*level_6)
+      }
+
+      alert("Tiền điện: " + bill + " đ")
+
+
+
+  </script>
 </body>
 </html>

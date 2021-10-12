@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai11</title>
 </head>
 <body>
-$END$
+  <script>
+    let income= parseInt(prompt("Enter income (VND): "))
+    let income_under_tax= income- (income* 0.095)
+    let personal_income_tax= 0
+
+    if (personal_income_tax <= 5000000){
+        personal_income_tax= income_under_tax* 0.05
+    }else if (personal_income_tax<= 10000000){
+        personal_income_tax= 5000000 * 0.05 + ((income_under_tax-5000000)*0.1)
+    }else if (personal_income_tax <=18000000) {
+        personal_income_tax = (5000000*0.05) + (5000000*0.1) + ((personal_income_tax-10000000)*0.15)
+    } else if (personal_income_tax <=32000000) {
+        personal_income_tax = (5000000*0.05) + (5000000*0.1) + (8000000*0.15) + ((personal_income_tax-18000000)*0.2)
+    } else if (personal_income_tax <=52000000) {
+        personal_income_tax = (5000000*0.05) + (5000000*0.1) + (8000000*0.15) + (14000000*0.2) + ((personal_income_tax-32000000)*0.25)
+    } else if (personal_income_tax <=80000000) {
+        personal_income_tax = (5000000*0.05) + (5000000*0.1) + (8000000*0.15) + (14000000*0.2) + (10000000*0.25) + ((personal_income_tax-42000000)*0.3)
+    } else {
+        personal_income_tax = (5000000*0.05) + (5000000*0.1) + (8000000*0.15) + (14000000*0.2) + (10000000*0.25) + (28000000*0.3) + ((personal_income_tax-70000000)*0.35)
+    }
+    alert("Thuế thu nhập cá nhân: " + personal_income_tax + "VND")
+  </script>
 </body>
 </html>
