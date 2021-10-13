@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<table>
+    <h2 style="color: red; text-align: center"><b>Let's guest!!!</b></h2>
+    <tr>
+        <td style="color: blue; position: absolute; left: 50%" ><input type="button" onclick="index()" value="Play"></td>
+    </tr>
+
+</table>
+
+    <script>
+        let count= 3
+        function index(){
+            let a= parseInt(prompt("(From a to b) Enter a: "));
+            let b= parseInt(prompt("(From a to b) Enter b: "));
+
+            let random= Math.floor(Math.random() * ( b - a ) + a);
+
+            for (let i=1; i<=3; i++){
+                let guestNumber= parseInt(prompt("Enter your number: "))
+
+                if (guestNumber === random){
+                    alert("Congratulations!!")
+                    break;
+                }else if (guestNumber < random && i< count){
+                    alert("Enter higher number: ")
+                }else if (guestNumber > random && i< count){
+                    alert("Enter lower number: ")
+                } else if (count=== i) {
+                    alert("Oops! Try again next time <3")
+                }
+
+            }
+
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+    <script>
+        let firstNum= 1
+        let secondNum=  1
+
+        document.write(firstNum +  " ")
+        let result= 0
+        let sum=  firstNum
+
+
+        for (let i = 1; i<=20; i++){
+            document.write(secondNum +" ")
+            result= firstNum+ secondNum
+            firstNum= secondNum
+            sum+= secondNum
+            secondNum= result
+
+        }
+
+        document.write("<br>" + "Sum= " + sum)
+
+    </script>
+</body>
+</html>
