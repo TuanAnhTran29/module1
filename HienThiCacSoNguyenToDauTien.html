@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+    <script>
+        let length= parseInt(prompt("Enter a length: "))
+        let count= 0
+        let N= 2
+        document.write("First " + length + " primes numbers are:"  )
+        let isPrime= true
+
+        while (count < length){
+                for (let i= 2; i<= Math.sqrt(N); i++ ){
+                    if (N%i === 0){
+                        isPrime= false
+                        break;
+
+                    }
+
+                }
+                if (isPrime== true) {
+                    document.write(N + " ")
+                    count++
+                }
+            isPrime = true
+            N++
+
+
+        }
+    </script>
+</body>
+</html>
