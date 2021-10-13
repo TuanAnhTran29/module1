@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+    <script>
+        let amount= parseInt(prompt("Enter your loan amount (VND): "))
+        let term= parseInt(prompt("Enter loan term (tháng): "))
+        let monthly_interest= parseInt(prompt("Enter monthly interest: "))/100
+
+        let bank_interest= amount * (1 + monthly_interest )^term
+
+        alert("Lãi suất ngân hàng: " + bank_interest )
+
+    </script>
+</body>
+</html>
