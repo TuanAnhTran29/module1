@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng vui</title>
+</head>
+<body>
+    <h1>Type anything slowly</h1>
+
+    <textarea id="text" onkeydown="changeText()"  rows="5" ></textarea>
+<script>
+    let str= " tiền nào của nấy "
+    let arr= str.split("")
+    let str_show= ""
+
+    function changeText(){
+        let inputText= document.getElementById("text").value
+        let textLength= inputText.length
+
+        if (textLength>0){
+
+            for (let i=1; i<=textLength; i++){
+                str_show+= arr[i]
+                if (i === arr.length ){
+                    document.getElementById("text").value= ""
+                    str_show= ""
+
+            }
+        }
+
+    }
+        document.getElementById("text").value= str_show
+        str_show= ""
+        setTimeout(changeText, 1)
+
+
+    }
+
+
+
+</script>
+</body>
+</html>
