@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt("Enter your number: "))
+    let arr= [-1,-2,-5,1,5,6,9,10,-19,-21]
+    let new_arr= []
+    if (arr.indexOf(a) !== -1){
+        let pos= arr.indexOf(a)
+        for (let i=0; i<pos; i++){
+            new_arr.push(arr[i])
+        }
+
+        for (let i= pos+1; i<arr.length; i++){
+            new_arr.push(arr[i])
+
+        }
+        new_arr.push(0)
+        document.write(new_arr)
+
+
+
+    }else {
+        alert(a + " is not in the array")
+        document.write(arr)
+    }
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <p id="result"></p>
+  <script>
+        let arrays= [9,5,7,6,10,11,16,33,20,1]
+        let count= 0
+
+        for (let i=0; i<arrays.length; i++){
+            if (arrays[i]>=10){
+                count+= 1
+                document.getElementById("result").innerHTML= "Co " + count + " so lon hon bang 10 trong mang"
+
+            }else {
+                count+=0
+
+            }
+        }
+  </script>
+</body>
+</html>

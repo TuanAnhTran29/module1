@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+  <script>
+      let array= [9,5,7,6,10,11,16,33,20,1]
+      let maxNum= array[0]
+      let sum= 0
+      let average
+
+      for (let i=0; i< array.length; i++){
+          sum+= array[i]
+          if (array[i]>maxNum){
+              maxNum= array[i]
+          }
+      }
+      average= sum/array.length
+
+
+      document.write("Biggest number: " + maxNum)
+      document.write("<br>")
+      document.write("Medium valuable: " + average)
+
+
+  </script>
+</body>
+</html>

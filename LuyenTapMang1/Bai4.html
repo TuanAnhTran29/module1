@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+  <script>
+    let array= [9,5,7,6,10,11,16,33,20,1]
+    let first= 0
+    let last= array.length-1
+
+    for (let i=0; i<array.length;i++){
+        if (first<last){
+            b= array[first]
+            array[first]= array[last]
+            array[last] = b
+            first++
+            last--
+        }
+    }
+    document.write(array)
+
+  </script>
+</body>
+</html>
