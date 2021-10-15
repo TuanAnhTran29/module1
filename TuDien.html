@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="from" placeholder="Enter a word">
+        <br><br>
+        <input type="button" value="Search" onclick="conVert()">
+        <br><br>
+        <p id="result"></p>
+
+    </form>
+
+        <script>
+            let arr1= ["airplane", "sunflower", "mouse"]
+            let arr2= ["máy bay", "hoa hướng dương", "con chuột"]
+
+           function conVert(){
+                let input= document.getElementById("from").value
+                let result= document.getElementById("result")
+
+
+                let pos =   arr1.indexOf(input)
+
+                if (pos !== -1){
+                    result.innerHTML= arr2[pos]
+
+                }else {
+                    result.innerText= "Can not find!"
+                }
+
+            }
+
+
+
+
+
+        </script>
+</body>
+</html>
