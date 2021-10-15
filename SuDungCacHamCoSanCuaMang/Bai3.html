@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+  <script>
+      var str = 'TuanAnh';
+      var UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var LOWERCASE = 'abcdefghijklmnopqrstuvwxyz';
+      var result = [];
+
+     for (let i=0; i<str.length; i++){
+         if (UPPERCASE.indexOf(str[i]) !== -1){
+             result.push(str[i].toLowerCase())
+         }else if (LOWERCASE.indexOf(str[i])!==-1){
+                result.push(str[i].toUpperCase())
+         }else
+                result.push(str[i])
+
+     }
+     console.log(result.join(""))
+  </script>
+</body>
+</html>
