@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<script>
+  let str= prompt("Enter whatever you want: ")
+  let arr= str.split("")
+  let new_arr=""
+
+  for (let i=0; i<arr.length; i++){
+      if (arr[i] === "-" ){
+            new_arr+= "_"
+      }else {
+          new_arr+= arr[i]
+      }
+  }
+  document.write(new_arr)
+</script>
+</body>
+</html>
