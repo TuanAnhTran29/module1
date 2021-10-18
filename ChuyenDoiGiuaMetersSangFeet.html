@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa meters sang feet</title>
+</head>
+<body>
+<script>
+    function feetToMeter(feet){
+        return 0.305 * feet
+    }
+
+    let feet= parseInt(prompt("Enter length (ft):  "))
+    let convertLength= feetToMeter(feet)
+    alert(convertLength)
+
+
+
+    function meterToFeet(meter){
+        return 3.279 * meter
+    }
+
+
+    let meter= parseInt(prompt("Enter length (m): "))
+    let convertLength= meterToFeet(meter)
+    alert(convertLength)
+</script>
+</body>
+</html>
