@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm kiểm tra số nguyên</title>
+</head>
+<body>
+<script>
+   function isPrime(number) {
+        if (number<2){
+            return false;
+        }else if (number< 4){
+            return true
+        }else {
+            for (let i=2;i< number-1; i++){
+                if (number%i === 0){
+                    return false
+                }else return true
+            }
+        }
+   }
+
+
+   let number= parseInt(prompt("Enter your number: "))
+   let checkPrime= isPrime(number)
+   alert(checkPrime)
+
+</script>
+</body>
+</html>
