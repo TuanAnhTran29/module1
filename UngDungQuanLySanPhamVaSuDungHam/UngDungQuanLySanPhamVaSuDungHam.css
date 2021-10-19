@@ -1,0 +1,15 @@
+.table1{
+    height: 80px;
+    background-color: aquamarine;
+}
+
+.table2{
+    width: 1000px;
+}
+
+.table3{
+    width: 700px;
+}
+.table3 tr:nth-child(even){
+    background-color: #dddddd;
+}
