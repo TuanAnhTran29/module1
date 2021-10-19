@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    function getAreaOfCircle(radius){
+        area= radius*radius * Math.PI
+        return area
+    }
+
+    function getPerimeterOfCircle(radius){
+        perimeter= radius * Math.PI
+        return perimeter
+    }
+
+
+    let radius= parseInt(prompt("Enter radius of circle: "))
+    let demo1= getAreaOfCircle(radius)
+    alert("Area of circle= " + demo1)
+    let demo2= getPerimeterOfCircle(radius)
+    alert("Perimeter of circle= " + demo2)
+</script>
+</body>
+</html>

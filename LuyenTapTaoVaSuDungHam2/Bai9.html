@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let arr= [2,9,1,0,2,0,0,3]
+
+    let a=parseInt(prompt("Enter your number: "))
+    let demo= checkArray(arr,a)
+    alert(demo)
+
+
+    function checkArray(arr,a) {
+        let count= 0
+        if (arr.indexOf(a) !== -1){
+            for (let i=0; i<arr.length; i++){
+                if (arr[i] === a)
+                count+=1
+            }
+            return count
+        }else {
+            return -1
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
