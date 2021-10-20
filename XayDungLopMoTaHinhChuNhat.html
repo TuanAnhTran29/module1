@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    let Rectangle= function (width,height,){
+        this.width= width
+        this.height= height
+        this.getWidth= function (){
+            return this.width
+        }
+        this.getHeight= function (){
+            return this.height
+        }
+        this.getArea= function (){
+            return this.width * this.height
+        }
+        this.getParameter= function (){
+            return 2 * (this.height + this.width)
+        }
+        this.getRect= function (){
+            let ctx= document.getElementById("myCanvas").getContext("2d")
+            ctx.beginPath()
+            ctx.rect(20,20,this.width,this.height)
+            ctx.stroke()
+        }
+    }
+
+
+
+
+    let rectangle= new Rectangle(60,30)
+    let width= rectangle.getWidth()
+    let height= rectangle.getHeight()
+    let area= rectangle.getArea()
+    let perimeter= rectangle.getParameter()
+
+    rectangle.getRect()
+
+    alert("Area= " + area + " Perimeter= " + perimeter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
