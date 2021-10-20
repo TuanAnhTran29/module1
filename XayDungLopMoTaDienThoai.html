@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<script>
+    class Mobile{
+        constructor(name) {
+            this.name= name
+            this.battery= 100
+            this.draft= ""
+            this.sent= []
+            this.inbox= []
+            this.isOn= true
+        }
+
+        getName= function (){
+            return this.name
+        }
+        setName= function (name){
+            return this.name= name
+        }
+        getBattery= function (){
+            return this.battery
+        }
+        setBattery= function (battery){
+            return this.battery= battery
+        }
+        getDraft= function (){
+            return this.draft
+        }
+        setDraft= function (draft){
+            return this.draft= draft
+        }
+
+
+
+
+        charged= function (){
+            return this.battery= 100
+        }
+
+        checkStatus= function (){
+            if (this.isOn === true){
+                return this.isOn = false
+            }else if (this.isOn === false && this.battery !==0){
+                return this.isOn= true
+            }else if (this.isOn === true && this.battery === 0){
+                return this.isOn= false
+            }
+        }
+
+        texting= function (text) {
+            if (this.isOn === false && this.battery === 0) {
+                this.isOn = false
+                alert("Your phone is off")
+            } else {
+                this.battery -= 1
+                this.draft = text
+            }
+        }
+
+
+        sendMessage = function (phone) {
+            if (this.isOn === false && this.battery === 0) {
+                this.isOn = false
+                alert("Your phone is off")
+            }else {
+                phone.inbox.push(this.draft)
+
+                this.sent.push(this.draft)
+
+                this.draft= ""
+            }
+        }
+
+        getInbox= function (){
+            if (this.isOn === false && this.battery === 0) {
+                this.isOn = false
+                alert("Your phone is off")
+            }else {
+                this.battery-= 1
+                return this.inbox
+            }
+        }
+
+        getSent= function (){
+            if (this.isOn === false && this.battery === 0) {
+                this.isOn = false
+                alert("Your phone is off")
+            }else {
+                this.battery-= 1
+                return this.sent
+            }
+
+
+    }
+
+
+
+
+            }
+
+
+
+    let tuananh= new Mobile("samsung")
+    let hieu= new Mobile("nokia")
+
+    tuananh.texting("Alo")
+    tuananh.sendMessage(hieu)
+
+    console.log(hieu.getInbox())
+    console.log(hieu.getBattery())
+    console.log(tuananh.getBattery())
+
+    hieu.texting("?")
+    hieu.sendMessage(tuananh)
+
+    console.log(tuananh.getInbox())
+    console.log(tuananh.getBattery())
+
+
+</script>
+</body>
+</html>
