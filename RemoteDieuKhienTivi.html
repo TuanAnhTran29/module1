@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote điều khiển tivi</title>
+</head>
+<body>
+<script>
+    class Remote{
+        constructor(code) {
+            this.code= code
+        }
+
+        swChannel(Tivi,channel){
+            if (Tivi.status === true){
+                return Tivi.swChannel(channel)
+            }
+        }
+
+        controlVolume(Tivi,volume){
+            if (Tivi.status === true){
+                return Tivi.changeVol(volume)
+            }
+        }
+
+        turnOnOff(Tivi){
+            if (Tivi.status=== true){
+                return Tivi.status= false
+            }else if (Tivi.status === false){
+                return Tivi.status= true
+            }
+        }
+
+
+
+    }
+
+
+    class Tivi {
+        constructor(curChannel,curVolume,status,) {
+            this.curChannel= curChannel
+            this.curVolume= curVolume
+            this.status= status
+        }
+
+        swChannel(channel){
+            return this.curChannel= channel
+        }
+
+        changeVol(volume){
+            return this.curVolume+= volume
+
+        }
+
+        onOff(){
+            if (this.status === true){
+                return this.status = false
+            }else if (this.status=== false) {
+                return this.status= true
+            }
+        }
+    }
+
+    let tivi= new Tivi(1,40,false)
+    let remote= new Remote(291003)
+
+
+    tivi.onOff()
+
+    tivi.swChannel(7)
+
+    remote.swChannel(tivi,3)
+
+    remote.controlVolume(tivi,2)
+
+    remote.turnOnOff(tivi)
+
+
+    console.log(tivi.curChannel)
+    console.log(tivi.curVolume)
+    console.log(tivi.status)
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
