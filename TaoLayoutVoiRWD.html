@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao layout voi RWD</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo layout với RWD</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        #menu {
+            border: 1px solid;
+            height: 50px;
+            background-color: black;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        #logo {
+            margin: 0;
+            padding: 0;
+            line-height: 50px;
+            float: left;
+            text-align: center;
+            color: gray;
+            width: 50px;
+
+        }
+
+        #main {
+            margin: 0;
+            text-align: center;
+            line-height: 50px;
+            background-color: #4d4c4c;
+        }
+
+        #main ul, #main li{
+            padding: 0;
+            margin: 0;
+        }
+
+        #main li {
+            position: relative;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main li a {
+            width: 100px;
+            height: 50px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+        }
+
+        #bar li a:hover {
+            background-color: gray;
+        }
+
+        #login {
+            position: relative;
+            float: right;
+        }
+
+
+
+
+        #section {
+            height: 350px;
+            width: 10%;
+            float: left;
+            background-color: blue;
+            color: white;
+        }
+
+        #section a {
+            text-decoration: none;
+        }
+
+        #section li {
+            list-style: none;
+            color: white;
+        }
+
+        #article {
+            margin: 20px;
+            float: left;
+            width: 60%;
+        }
+
+        #aside {
+            position: relative;
+            width: 10%;
+            float: right;
+            height: 350px;
+            background-color: blue;
+            text-align: center;
+        }
+
+        #aside div {
+            border: 1px solid black;
+            margin: 20px;
+            width: 90px;
+            background-color: white;
+        }
+
+        .footer {
+            background-color: gray;
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id ="menu">
+    <div id="logo">
+        <header>
+            <h3>Logo</h3>
+        </header>
+    </div>
+    <div id ="main">
+        <nav>
+            <div id ="bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a> </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="login">
+                <ul id>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+
+<div id="section">
+    <section>
+        <ul>
+            <li><a href="#">Link</a> </li>
+            <br>
+            <li><a href="#">Link</a> </li>
+            <br>
+            <li><a href="#">Link</a> </li>
+        </ul>
+    </section>
+</div>
+
+<div id="article">
+    <article>
+        <h1>Welcome</h1>
+        <p>Breakpoint là các điểm mà chúng ta sử dụng để kích hoạt việc thay đổi bố cục của trang web. Chẳng hạn, ở ví dụ trước thì breakpoint của chúng ta là 500px của độ rộng. Trong ví dụ sau đây, chúng ta sẽ sử dụng một breakpoint là 768px (độ rộng phổ biến của một tablet). Nếu độ rộng của trình duyệt nhỏ hơn hoặc bằng 768px thì tất cả các cột đều chiếm độ rộng 100% (có nghĩa là mỗi block sẽ chiếm một dòng).</p>
+
+        <br>
+        <br>
+        <h2>Test</h2>
+        <p>Today is the good day to die</p>
+
+
+    </article>
+</div>
+
+<div id="aside">
+    <aside>
+        <div id = "box1">
+            <p>ADS</p>
+        </div>
+        <div id ="box2">
+            <p>ADS</p>
+        </div>
+    </aside>
+</div>
+<div class ="footer">
+    <footer>
+        <p>Footer Text</p>
+    </footer>
+</div>
+</body>
+</html>
+</body>
+</html>
